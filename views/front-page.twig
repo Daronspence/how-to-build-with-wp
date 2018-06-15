@@ -1,0 +1,61 @@
+{% extends 'base.twig' %}
+
+{% block body %}
+<div id="sign-up" class="bg-pattern-squiggle px-2">
+    <nav class="flex justify-between p-6">
+        <a class="font-bold text-black text-xl no-underline" href="/">How to Build with WP</a>
+        <a class="font-bold text-black no-underline border-b hover:border-black border-transparent" href="/courses">Courses</a>
+    </nav>
+    <div class="container mx-auto flex items-center justify-center min-h-screen">
+        <div class="w-full">
+            <h1 class="text-2xl text-center md:text-left md:text-5xl md:w-2/3 mb-8">Learn to Build Tools for Your Business with WordPress</h1>
+
+            <p class="mb-8 max-w-md">Subscribe for access to the <strong>FREE</strong> E-book on getting started with WordPress or 
+                <br><a class="font-bold text-indigo no-underline border-b hover:border-indigo border-transparent uppercase" href="/courses">buy the first course now!<a> 🎉</p>
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="https://howtobuildwithwp.us9.list-manage.com/subscribe/post?u=66c6af09ba208080a03459801&amp;id=93fdae3e80" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div class="mb-2">
+                        <label for="mce-EMAIL" class="block mb-2 uppercase font-bold text-xs">Email Address</label>
+                        <input class="w-full md:w-1/2 px-2 py-4 italic" placeholder="karen@example.com" required type="email" value="" name="EMAIL" id="mce-EMAIL">
+                    </div>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_66c6af09ba208080a03459801_93fdae3e80" tabindex="-1" value=""></div>
+                    <input type="submit" class="bg-black text-white px-4 py-2 uppercase font-bold text-sm" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+                </form>
+            </div>
+            <!--End mc_embed_signup-->
+
+            <p class="text-grey-darker italic mt-8">Not convinced? <a href="#learn-more" class="text-grey-darker italic no-underline border-b border-grey-darker border-dotted">Learn More &raquo;</a></p>
+        </div>
+    </div>
+</div>
+ <div id="learn-more" class="px-2 container mx-auto flex items-center justify-center min-h-screen">
+    <div class="w-full">
+        <h2 class="text-2xl text-center md:text-left md:text-4xl my-12 md:w-2/3">Building Solutions &amp; Tools with WordPress since 2013</h2>
+        <div class="md:flex items-start">
+            <img class="block mx-auto my-4 rounded-full w-32 md:mr-8 md:ml-0 md:my-0" src="{{ theme.link }}/static/images/daron.jpg" alt="Daron Spence" />
+            <div class="leading-normal md:max-w-md">
+                <p class="mb-2">My name is Daron Spence and I've been helping business owners and entrepreneurs build tools to 
+                    help grow their business for over 5 years. I can show you how to build solutions that <strong>you would pay 
+                    thousands of dollars</strong> for at a professional agency.</p>
+
+                <p>I've completed hundreds of projects in a variety of professional settings. Let me guide you on how to save money and build your business using the software you already have access to.</p>
+            </div>
+        </div>
+
+        <div class="pt-12 pb-4 mt-12 bg-blue-lightest">
+            <blockquote class="italic font-serif text-xl text-grey-darker max-w-lg mx-auto text-center bg-blue-lightest p-8">
+                <img class="rounded-full w-16 -mt-12 mb-4" src="{{ theme.link }}/static/images/heather.jpg" alt="Heather Gauntt" />
+                <p class="mb-2">Daron is an effective communicator who can show you how easy it is to build tools for you business. He's awesome!</p>
+                <a class="text-sm text-blue-darker" href="https://twitter.com/CentsAbilityTX">Heather - Cents+Ability Financial Solutions</a>
+            </blockquote>
+        </div>
+
+        <div class="text-center my-12 text-xs">
+            <p class="italic">What are you waiting for?!</p>
+            <a href="#sign-up" class="inline-block bg-black text-white px-4 py-2 uppercase font-bold no-underline mt-2">Sign Up Now</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

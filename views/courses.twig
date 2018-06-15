@@ -1,0 +1,32 @@
+{% extends 'base.twig' %}
+
+{% block body %}
+<nav class="flex justify-between p-6">
+    <a class="font-bold text-black text-xl no-underline" href="/">How to Build with WP</a>
+    <a class="font-bold text-black no-underline border-b hover:border-black border-transparent" href="/courses">Courses</a>
+</nav>
+
+<h1 class="text-center mb-4">Available Courses</h1>
+<div class="p-6 mb-8 max-w-md mx-auto flex flex-wrap space-between">
+    <a 
+        href="/courses/how-to-sell-products-online-using-gravity-forms-and-stripe/" 
+        class="w-1/2 p-2 no-underline text-black flex-grow flex">
+        <div class="flex-1 flex-col shadow hover:shadow-lg rounded-sm bg-grey-lightest py-8 px-6"  style="transition: all 200ms linear;">
+            <div class="font-bold mb-2">How to Sell Products with Gravity Forms, Stripe &amp; PayPal</div>
+            <div class="text-sm mb-4">Learn to use Gravity Forms to sell products on your own website and take payments with PayPal or Stripe.</div>
+            <div class="text-right border-t-2 pt-2 font-bold">$49</div>
+        </div>
+    </a>
+    <a 
+        href="https://howtobuildwithwp.us9.list-manage.com/subscribe/post?u=66c6af09ba208080a03459801&id=93fdae3e80" taget="_blank"
+        class="w-1/2 p-2 no-underline text-black flex-grow flex">
+        <div class="flex-1 shadow hover:shadow-lg rounded-sm bg-grey-lightest py-8 px-6"  style="transition: all 200ms linear;">
+            <div class="font-bold mb-2">More Courses Coming Soon!</div>
+            <div class="text-sm mb-4">Check back for more courses in the near future, or sign up for our mailing list to be notified immeadiately when new courses are available.</div>
+            <div class="text-right">
+                <span class="inline-block bg-black text-white px-4 py-2 uppercase font-bold text-sm">Join Mailing List</span>
+            </div>
+        </div>
+    </a>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.twig' %}
+
+{% block body %}
+<nav class="flex justify-between p-6">
+    <a class="font-bold text-black text-xl no-underline" href="/">How to Build with WP</a>
+    <a class="font-bold text-black no-underline border-b hover:border-black border-transparent" href="/courses">Courses</a>
+</nav>
+
+<div class="p-6 mb-8 max-w-md mx-auto">
+    <h1 class="mb-4">{{ post.title }}</h1>
+    {{ post.content }}
+</div>
+{% endblock %}

@@ -35,7 +35,6 @@ class HowToBuildWithWP extends TimberSite {
 		$context['year'] = date('Y');
 		$context['is_home'] = is_home();
 		$context['csscache'] = filemtime(get_stylesheet_directory() . '/style.css');
-		$context['plugin_content'] = TimberHelper::ob_function( 'the_content' );
 		
 		return $context;
 	}
@@ -45,7 +44,8 @@ class HowToBuildWithWP extends TimberSite {
 	}
 
 	function enqueue_scripts(){
-
+        wp_enqueue_style( 'howtobuildwithwp', get_stylesheet_uri() );
+        wp_enqueue_script( 'howtobuildwithwp', get_stylesheet_directory_uri() . '/static/js/site.js', array('jquery'), true );
 	}
 
 	function dashboard_glance_items( $items ){
